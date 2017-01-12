@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Apple" />
+        <module name="Generic" />
+        <module name="NBA" />
+        <module name="ObamaCare" />
+        <module name="Twitch" />
+        <module name="Vanguard" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Apple" target="1.5" />
+      <module name="Generic" target="1.5" />
+      <module name="NBA" target="1.5" />
+      <module name="ObamaCare" target="1.5" />
+      <module name="Team2" target="1.5" />
+      <module name="Twitch" target="1.5" />
+      <module name="Vanguard" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
