@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Nba ">
+
+    <parameter name="os" value="Win"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="50"/>
+    <parameter name="url" value="http://www.nba.com/"/>
+
+    <test name = "NBA Search">
+        <classes>
+            <class name="SearchTeam.SearchNbaTeams"/>
+            <class name="Home.TestNbaHomePage"/>
+        </classes>
+    </test>
+</suite>
