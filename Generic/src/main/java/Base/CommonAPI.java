@@ -28,12 +28,13 @@ import java.util.concurrent.TimeUnit;
  */
 public class CommonAPI {
 
+
     public WebDriver driver = null;
     @Parameters({"useCloudEnv","userName","accessKey","os","browserName","browserVersion","url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("") String userName, @Optional("")
-            String accessKey, @Optional("Windows 10") String os, @Optional("") String browserName, @Optional("")
-                              String browserVersion, @Optional("") String url)throws IOException {
+    public void setUp(@Optional("false") boolean useCloudEnv, @Optional("rahmanww") String userName, @Optional("")
+            String accessKey, @Optional("Windows 8") String os, @Optional("firefox") String browserName, @Optional("34")
+                              String browserVersion, @Optional("http://www.cnn.com") String url)throws IOException {
 
         if(useCloudEnv==true){
             //run in cloud
@@ -54,9 +55,9 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String OS,String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(OS.equalsIgnoreCase("Mac")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "/Users/abra/maven-projects/Team2-TestAutomation/Generic/src/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Win")){
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jubar\\IdeaProjects\\Team2\\Generic\\src\\driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver.exe");
             }
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){
@@ -199,18 +200,21 @@ public class CommonAPI {
         }
 
     }
-    public void mouseHoverByXpath(String locator) {
+    public void mouseHoverByXpath(String locator){
         try {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
             Actions hover = action.moveToElement(element);
-        } catch (Exception ex) {
+        }catch(Exception ex){
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
+
         }
+
     }
+    //handling Alert
     public void okAlert(){
         Alert alert = driver.switchTo().alert();
         alert.accept();
@@ -220,22 +224,26 @@ public class CommonAPI {
         alert.dismiss();
     }
 
+    //iFrame Handle
     public void iframeHandle(WebElement element){
         driver.switchTo().frame(element);
     }
+
     public void goBackToHomeWindow(){
         driver.switchTo().defaultContent();
     }
 
+    //get Links
     public void getLinks(String locator){
         driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
     }
 
+    //Taking Screen shots
     public void takeScreenShot()throws IOException {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file,new File("screenShots.png"));
     }
-
+    //Synchronization
     public void waitUntilClickAble(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
@@ -250,6 +258,9 @@ public class CommonAPI {
     }
     public void upLoadFile(String locator,String path){
         driver.findElement(By.cssSelector(locator)).sendKeys(path);
+        /* path example to upload a file/image
+           path= "C:\\Users\\rrt\\Pictures\\ds1.png";
+         */
     }
     public void clearInput(String locator){
         driver.findElement(By.cssSelector(locator)).clear();
