@@ -1,8 +1,8 @@
-package SearchTeam;
+package SearchNBA;
 
 import Base.CommonAPI;
 import DataToBeSearch.TeamsToBeSearch;
-import PageFactorySearchBar.SearchNba;
+import PageFactorySearchBar.SearchNbaPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -15,7 +15,7 @@ public class SearchNbaTeams extends CommonAPI {
 
      @Test
     public void searchNBATeamUsingExcelFile()throws IOException,InterruptedException {
-    SearchNba search = PageFactory.initElements(driver, SearchNba.class);
+    SearchNbaPage search = PageFactory.initElements(driver, SearchNbaPage.class);
     TeamsToBeSearch teamsSearched = new TeamsToBeSearch();
         String[] value = teamsSearched.getData();
         for (int i = 1; i < value.length; i++) {

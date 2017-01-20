@@ -9,7 +9,7 @@ import org.openqa.selenium.support.How;
 /**
  * Created by Jubar on 1/14/2017.
  */
-public class SearchNba extends CommonAPI{
+public class SearchNbaPage extends CommonAPI{
     @FindBy(how = How.XPATH, using= ".//*[@id='block-mainnavigation']/nav/div[3]/ul/li[4]/a")
     public static WebElement searchPage;
 

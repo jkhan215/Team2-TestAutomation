@@ -11,7 +11,7 @@
 
     <test name = "NBA Search">
         <classes>
-            <class name="SearchTeam.SearchNbaTeams"/>
+            <!--<class name="SearchTeam.SearchNbaTeams"/>-->
             <class name="Home.TestNbaHomePage"/>
         </classes>
     </test>
