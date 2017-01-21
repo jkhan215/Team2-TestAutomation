@@ -11,15 +11,11 @@
     <parameter name="browserVersion" value="50"/>
     <parameter name="url" value="http://www.nba.com/"/>
 
-
-    <test name = "NBA on Chrome">
+    <test name="Test Twitch On Chrome">
         <classes>
-            <!--<class name="SearchTeam.SearchNbaTeams"/>-->
-            <!--<class name="Login.TestLogIn"/>-->
-            <!--<class name="NBAStatsPage.TestNBAStats"/>-->
-            <!--<class name="SearchNBA.SearchNBAPlayers"/>-->
-            <!--<class name="SearchNBA.SearchNbaTeams"/>-->
-            <class name="Home.TestNbaHomePage"/>
+            <class name="HomePage.TestTwitchHomePage"/>
+            <class name="SearchTwitch.TestTwitchSearch"/>
+            <class name="TwitchGamePage.TestTwitchGame"/>
         </classes>
     </test>
 </suite>

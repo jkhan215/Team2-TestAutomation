@@ -12,6 +12,10 @@
     <test name = "NBA Search">
         <classes>
             <!--<class name="SearchTeam.SearchNbaTeams"/>-->
+            <!--<class name="Login.TestLogIn"/>-->
+            <!--<class name="NBAStatsPage.TestNBAStats"/>-->
+            <!--<class name="SearchNBA.SearchNBAPlayers"/>-->
+            <!--<class name="SearchNBA.SearchNbaTeams"/>-->
             <class name="Home.TestNbaHomePage"/>
         </classes>
     </test>
