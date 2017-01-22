@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Nba ">
+<suite name="Twitch ">
     <parameter name="os" value="Win"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="50"/>
