@@ -10,16 +10,16 @@ import org.testng.annotations.Test;
 public class TestNBAStats extends NBAStat{
 
     @Test(priority = 1)
-    public void testNBAPointsPage() throws InterruptedException {
+    public void testNBADailyPage() throws InterruptedException {
         NBAStat nbaStat = PageFactory.initElements(driver,NBAStat.class);
-        nbaStat.pointsPage();
+        nbaStat.DailyPage();
         sleepFor(2);
         driver.quit();
     }
     @Test(priority = 2)
-    public void testNbaReboundsPage() throws InterruptedException {
+    public void testDailyPage() throws InterruptedException {
         NBAStat nbaStat = PageFactory.initElements(driver,NBAStat.class);
-        nbaStat.reboundPage();
+        nbaStat.DailyPage();
         sleepFor(2);
         driver.quit();
     }
@@ -31,9 +31,9 @@ public class TestNBAStats extends NBAStat{
         driver.quit();
     }
     @Test(priority = 4)
-    public void testNbaBlocksPage() throws InterruptedException {
+    public void testGamePage() throws InterruptedException {
         NBAStat nbaStat = PageFactory.initElements(driver,NBAStat.class);
-       nbaStat.blockPage();
+       nbaStat.GamePage();
         sleepFor(2);
         driver.quit();
     }

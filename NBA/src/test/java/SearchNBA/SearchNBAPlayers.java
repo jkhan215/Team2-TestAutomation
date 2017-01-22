@@ -24,6 +24,6 @@ public class SearchNBAPlayers extends CommonAPI {
         SearchNbaPage nbaPage = PageFactory.initElements(driver,SearchNbaPage.class);
         nbaPage.searchFor(Players);
         nbaPage.clearSearchBar();
-        driver.quit();
+
     }
 }
