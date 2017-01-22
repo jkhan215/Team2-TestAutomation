@@ -23,14 +23,14 @@ public class TestNBAStats extends NBAStat{
         sleepFor(2);
         driver.quit();
     }
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void testNbaAssistPage() throws InterruptedException {
         NBAStat nbaStat = PageFactory.initElements(driver,NBAStat.class);
         nbaStat.assistsPage();
         sleepFor(2);
         driver.quit();
     }
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void testGamePage() throws InterruptedException {
         NBAStat nbaStat = PageFactory.initElements(driver,NBAStat.class);
        nbaStat.GamePage();
