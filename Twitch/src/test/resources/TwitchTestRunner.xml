@@ -3,9 +3,6 @@
 
 
 <suite name="Nba ">
-    <parameter name="useCloudEnv" value="false"/>
-    <parameter name="userName" value="jkhan215"/>
-    <parameter name="accessKey" value="927be011-8a57-4d19-9cae-e4508203f695"/>
     <parameter name="os" value="Win"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="50"/>
