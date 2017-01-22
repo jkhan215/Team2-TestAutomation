@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a524cfa-f2bd-4d5b-9188-c1a12d7db6cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Twitch/src/test/resources/TwitchTestRunner.xml" afterPath="$PROJECT_DIR$/Twitch/src/test/resources/TwitchTestRunner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml" afterPath="$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NBATestRunner.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NBATestRunner.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state relative-caret-position="68">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -71,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitchTestRunner.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TwitchTestRunner.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Twitch/src/test/resources/TwitchTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -187,9 +187,9 @@
         <option value="$PROJECT_DIR$/Twitch/src/main/java/PageFactorySearch/SearchBar.java" />
         <option value="$PROJECT_DIR$/Twitch/src/main/java/IteamsToBeSearch/SearchIteams.java" />
         <option value="$PROJECT_DIR$/Twitch/src/test/java/SearchTwitch/TestTwitchSearch.java" />
-        <option value="$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml" />
         <option value="$PROJECT_DIR$/NBA/src/test/java/Home/TestNbaHomePage.java" />
         <option value="$PROJECT_DIR$/Twitch/src/test/resources/TwitchTestRunner.xml" />
+        <option value="$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml" />
       </list>
     </option>
   </component>
@@ -1152,18 +1152,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Twitch/src/test/resources/TwitchTestRunner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NBA/src/test/resources/NBATestRunner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Nba ">
+<suite name="Nba Test ">
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="userName" value="jkhan215"/>
     <parameter name="accessKey" value="927be011-8a57-4d19-9cae-e4508203f695"/>
