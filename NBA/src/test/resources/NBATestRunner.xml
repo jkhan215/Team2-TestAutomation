@@ -14,12 +14,12 @@
 
     <test name = "NBA on Chrome">
         <classes>
-            <class name="Home.TestNbaHomePage"/>
-            <class name="SearchNBA.SearchNbaTeams"/>
-            <class name="SearchNBA.SearchNBAPlayers"/>
-            <class name="NBAStatsPage.TestNBAStats"/>
+            <!--<class name="Home.TestNbaHomePage"/>-->
+            <!--<class name="SearchNBA.SearchNbaTeams"/>-->
+            <!--<class name="SearchNBA.SearchNBAPlayers"/>-->
+            <!--<class name="NBAStatsPage.TestNBAStats"/>-->
             <class name="Login.TestLogIn"/>
-
         </classes>
     </test>
 </suite>
+
