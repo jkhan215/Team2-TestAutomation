@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a524cfa-f2bd-4d5b-9188-c1a12d7db6cd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/classes/PageFactory/AppleHomePage.class" afterPath="$PROJECT_DIR$/Apple/target/classes/PageFactory/AppleHomePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/classes/PageFactory/AppleSignIn.class" afterPath="$PROJECT_DIR$/Apple/target/classes/PageFactory/AppleSignIn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/classes/methods/CommonMethods.class" afterPath="$PROJECT_DIR$/Apple/target/classes/methods/CommonMethods.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/test-classes/AppleHomePage/TestAppleHomePage.class" afterPath="$PROJECT_DIR$/Apple/target/test-classes/AppleHomePage/TestAppleHomePage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/test-classes/AppleSearch/TestSearchWithDB.class" afterPath="$PROJECT_DIR$/Apple/target/test-classes/AppleSearch/TestSearchWithDB.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/test-classes/TestSignIn/TestAmazonSignIn.class" afterPath="$PROJECT_DIR$/Apple/target/test-classes/TestSignIn/TestAmazonSignIn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/target/classes/Base/CommonAPI.class" afterPath="$PROJECT_DIR$/Generic/target/classes/Base/CommonAPI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/target/classes/utility/ConnectDatabaseSQL.class" afterPath="$PROJECT_DIR$/Generic/target/classes/utility/ConnectDatabaseSQL.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleHomePage.java" afterPath="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleHomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleSignIn.java" afterPath="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleSignIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/main/java/methods/CommonMethods.java" afterPath="$PROJECT_DIR$/Apple/src/main/java/methods/CommonMethods.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java" afterPath="$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/test/java/AppleSearch/TestSearchWithDB.java" afterPath="$PROJECT_DIR$/Apple/src/test/java/AppleSearch/TestSearchWithDB.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/src/test/java/TestSignIn/TestAmazonSignIn.java" afterPath="$PROJECT_DIR$/Apple/src/test/java/TestSignIn/TestAmazonSignIn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Apple/target/test-classes/AppleAppTestRunner.xml" afterPath="$PROJECT_DIR$/Apple/target/test-classes/AppleAppTestRunner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/src/main/java/Base/CommonAPI.java" afterPath="$PROJECT_DIR$/Generic/src/main/java/Base/CommonAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Generic/src/main/java/utility/ConnectDatabaseSQL.java" afterPath="$PROJECT_DIR$/Generic/src/main/java/utility/ConnectDatabaseSQL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,7 +29,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AppleAppTestRunner.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppleAppTestRunner.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Apple/src/test/resources/AppleAppTestRunner.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -80,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestAppleHomePage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestAppleHomePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,9 +174,9 @@
         <option value="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleSignIn.java" />
         <option value="$PROJECT_DIR$/Apple/src/main/java/methods/CommonMethods.java" />
         <option value="$PROJECT_DIR$/Generic/src/main/java/Base/CommonAPI.java" />
-        <option value="$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java" />
         <option value="$PROJECT_DIR$/Apple/src/main/java/PageFactory/AppleHomePage.java" />
         <option value="$PROJECT_DIR$/Apple/src/test/resources/AppleAppTestRunner.xml" />
+        <option value="$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java" />
       </list>
     </option>
   </component>
@@ -884,7 +867,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1846" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1846" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1278,16 +1261,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Apple/screenshots/testMacButton.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1306,6 +1279,16 @@
         <state relative-caret-position="132">
           <caret line="6" column="46" lean-forward="false" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Apple/src/test/java/AppleHomePage/TestAppleHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

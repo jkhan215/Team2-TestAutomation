@@ -14,12 +14,12 @@
 
     <test name = "Apple Test">
         <classes>
-            <class name="TestSignIn.TestAmazonSignIn"/>
-            <class name="AppleSearch.TestSearchBar"/>
-            <class name="AppleSearch.TestSearchWithExcel"/>
+            <!--<class name="TestSignIn.TestAmazonSignIn"/>-->
+            <!--<class name="AppleSearch.TestSearchBar"/>-->
+            <!--<class name="AppleSearch.TestSearchWithExcel"/>-->
             <class name="AppleHomePage.TestAppleHomePage"/>
-            <class name="AppleSearch.TestSearchWithDataProvider"/>
-            <class name="AppleSearch.TestSearchWithDB"/>
+            <!--<class name="AppleSearch.TestSearchWithDataProvider"/>-->
+            <!--<class name="AppleSearch.TestSearchWithDB"/>-->
         </classes>
     </test>
 </suite>

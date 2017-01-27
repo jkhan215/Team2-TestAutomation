@@ -17,7 +17,7 @@ public class TestAppleHomePage extends CommonMethods{
     public void testMacButton() throws Exception {
         AppleHomePage appleHomePage = PageFactory.initElements(driver, AppleHomePage.class);
         appleHomePage.macButton.click();
-        //captureScreenshot(driver,"macbookPage");
+        captureScreenshot(driver,"macbookPage");
         Assert.assertTrue(appleHomePage.titleMacBookPro.isDisplayed());
 
 
