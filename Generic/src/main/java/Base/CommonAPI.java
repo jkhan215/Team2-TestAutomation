@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
@@ -90,9 +91,28 @@ public class CommonAPI {
     }
 
     @AfterMethod
-    public void tearDown() throws Exception {
+    public void tearDown(ITestResult result) {
+        if(ITestResult.FAILURE== result.getStatus()){
+            captureScreenshot(driver,result.getName());
+        }
         driver.quit();
     }
+
+
+    public static void captureScreenshot(WebDriver driver, String screenshotName){
+
+        TakesScreenshot takesScreenshot = (TakesScreenshot)driver;
+        File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(source, new File("../Apple/screenshots/"+screenshotName+".png"));
+            System.out.println("Screenshot captured");
+        } catch (Exception e) {
+            System.out.println("Exception while taking screenshot "+e.getMessage());;
+        }
+
+    }
+
+
 
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();

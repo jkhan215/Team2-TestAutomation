@@ -13,7 +13,7 @@ public class AppleHomePage extends CommonAPI{
     @FindBy(how = How.XPATH, using=".//*[@id='ac-globalnav']/div/ul[2]/li[2]/a")
     public WebElement macButton;
 
-    @FindBy(how = How.XPATH, using=".//*[@id='main']/section[1]/div/div[1]/span/figure")
+    @FindBy(how = How.XPATH, using=".//*[@id='main']/section[1]/div/div[1]/span/h2")
     public WebElement titleMacBookPro;
 
 

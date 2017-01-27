@@ -16,6 +16,7 @@ public class CommonMethods extends CommonAPI{
 
     public Boolean loggedIn=false;
 
+
     public void userLogInDB() throws InterruptedException {
         if(!loggedIn){
 
@@ -25,7 +26,7 @@ public class CommonMethods extends CommonAPI{
 
             ConnectDatabaseSQL connectDatabaseSQL= new ConnectDatabaseSQL();
             List<String> list = new ArrayList<String>();
-            list=connectDatabaseSQL.retrieveDataFromTable("select login_credentials from login_info","login_credentials");
+            list=connectDatabaseSQL.retrieveDataFromTable("login_info","login_credentials");
             int i=0;
             typeByXpath("html/body/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/form/fieldset/p/span[1]/input",list.get(i));
             typeByXpath("html/body/div[2]/div[4]/div[1]/div[2]/div/div[1]/div/form/fieldset/p/span[2]/input", list.get(i+1));

@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.support.PageFactory;
 
 
+
 /**
  * Created by abra on 1/18/17.
  */
@@ -40,15 +41,14 @@ public class TestAmazonSignIn extends CommonMethods{
 //
 //    }
 
-    @Test(priority = 4)
-    public void signInUsingScanner() throws Exception{
-        userLogInScanner();
-
-    }
+//    @Test(priority = 4)
+//    public void signInUsingScanner() throws Exception{
+//        userLogInScanner();
+//
+//    }
 
     @Test(priority = 5)
     public void singInDB() throws InterruptedException{
         userLogInDB();
     }
-
 }

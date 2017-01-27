@@ -188,29 +188,29 @@ public class ConnectDatabaseSQL {
         }
 
 
-        public List<String> retrieveDataFromTable(String sql, String colName) {
-            // String []  data = {};
-            List<String> list = new ArrayList<String>();
-            try {
-                connectToDBFramework();
+    public List<String> retrieveDataFromTable(String tableName, String colName) {
+        // String []  data = {};
+        List<String> list = null;
+        try {
+            connectToDBFramework();
 
-                stmt = conn.createStatement();
-                rs = stmt.executeQuery("select "+colName+" from "+sql);
-                //Extract data from result set
-                // System.out.println("All the First names in this record");
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery("select "+colName+" from " +tableName);
+            //Extract data from result set
+            // System.out.println("All the First names in this record");
+            list = new ArrayList<String>();
+            while (rs.next()) {
+                //Retrieve by column name
 
-                while (rs.next()) {
-                    //Retrieve by column name
-
-                    list.add(rs.getString(colName));
-                    //list.add(rs.getString("Last"));
+                list.add(rs.getString(colName));
+                //list.add(rs.getString("Last"));
 
 
-                    // String firstName = rs.getString("Name");
-                    // String lastName = rs.getString("Last");
+                // String firstName = rs.getString("Name");
+                // String lastName = rs.getString("Last");
 
-                    // System.out.print("Name: " + firstName + " Surname: " + lastName+"\n");
-                }
+                // System.out.print("Name: " + firstName + " Surname: " + lastName+"\n");
+            }
 //            for(String st:list){
 //                System.out.println(st);
 //            }
@@ -220,31 +220,31 @@ public class ConnectDatabaseSQL {
 //                i++;
 //            }
 
-                rs.close();
-                stmt.close();
-                conn.close();
+            rs.close();
+            stmt.close();
+            conn.close();
+        } catch (SQLException se) {
+            //Handle errors for JDBC
+            se.printStackTrace();
+        } catch (Exception e) {
+            //Handle errors for Class.forName
+            e.printStackTrace();
+        } finally {
+            //finally block used to close resources
+            try {
+                if (stmt != null)
+                    stmt.close();
+            } catch (SQLException se2) {
+            }// nothing we can do
+            try {
+                if (conn != null)
+                    conn.close();
             } catch (SQLException se) {
-                //Handle errors for JDBC
                 se.printStackTrace();
-            } catch (Exception e) {
-                //Handle errors for Class.forName
-                e.printStackTrace();
-            } finally {
-                //finally block used to close resources
-                try {
-                    if (stmt != null)
-                        stmt.close();
-                } catch (SQLException se2) {
-                }// nothing we can do
-                try {
-                    if (conn != null)
-                        conn.close();
-                } catch (SQLException se) {
-                    se.printStackTrace();
-                }//end finally try
-            }//end try
-            return list;
-        }
+            }//end finally try
+        }//end try
+        return list;
+    }
 
 
     }

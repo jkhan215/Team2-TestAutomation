@@ -19,7 +19,7 @@ public class TestSearchWithDB extends CommonAPI{
         AppleSearchBar appleSearchBar = PageFactory.initElements(driver, AppleSearchBar.class);
 
         ConnectDatabaseSQL db = new ConnectDatabaseSQL();
-        List<String> st = db.retrieveDataFromTable("login_info","login_credentials");
+        List<String> st = db.retrieveDataFromTable("search_items","products");
         for(String data:st) {
             appleSearchBar.searchWithEnter(data);
             sleepFor(2);

@@ -27,7 +27,7 @@ public class AppleSignIn extends CommonAPI{
     @FindBy(how = How.XPATH, using=".//*[@id='coherent_id_6']/span")
     public WebElement errorMissingAppleID;
 
-    @FindBy(how = How.XPATH, using=".//*[@id='coherent_id_6']/span")
+    @FindBy(how = How.XPATH, using=".//*[@id='coherent_id_6']")
     public WebElement errorMissingPassword;
 
     @FindBy(how = How.XPATH, using=".//*[@id='ac-gn-bagview-content']/nav/ul/li[5]/a")
