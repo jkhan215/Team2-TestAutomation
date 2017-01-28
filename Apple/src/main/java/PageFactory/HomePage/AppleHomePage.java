@@ -1,4 +1,4 @@
-package PageFactory;
+package PageFactory.HomePage;
 
 import Base.CommonAPI;
 import org.openqa.selenium.WebElement;

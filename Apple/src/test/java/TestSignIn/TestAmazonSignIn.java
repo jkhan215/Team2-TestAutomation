@@ -1,6 +1,6 @@
 package TestSignIn;
 
-import PageFactory.AppleSignIn;
+import PageFactory.SignIn.AppleSignIn;
 import methods.CommonMethods;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -26,7 +26,7 @@ public class TestAmazonSignIn extends CommonMethods{
     @Test(priority = 2)
     public void signInUsingBlankPassword() throws Exception {
         AppleSignIn appleSignIn = PageFactory.initElements(driver, AppleSignIn.class);
-    appleSignIn.appleLogin("abrashamchy@gmail.com", "");
+    appleSignIn.appleLogin("ab@gmail.com", "");
         Assert.assertTrue(appleSignIn.errorMissingPassword.isDisplayed());
     }
 
@@ -48,7 +48,7 @@ public class TestAmazonSignIn extends CommonMethods{
 //    }
 
     @Test(priority = 5)
-    public void singInDB() throws InterruptedException{
+    public void singInUsingCorrectCredentialsFromDB() throws InterruptedException{
         userLogInDB();
     }
 }

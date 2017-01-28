@@ -1,7 +1,7 @@
 package AppleSearch;
 
 import Base.CommonAPI;
-import PageFactory.AppleSearchBar;
+import PageFactory.SearchBar.AppleSearchBar;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

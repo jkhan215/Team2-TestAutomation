@@ -4,9 +4,9 @@
 
 <suite name="Apple on Chrome ">
 
-    <parameter name="useCloudEnv" value="false"/>
-    <parameter name="userName" value="Abrasham_92"/>
-    <parameter name="accessKey" value="dd631513-e8b1-4db8-8c03-58fd53ec48fe"/>
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="userName" value="Abrasham_94"/>
+    <parameter name="accessKey" value="de23f75f-74d4-42e3-8bda-f66b0acbf827"/>
     <parameter name="os" value="Mac"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="50"/>
@@ -14,12 +14,12 @@
 
     <test name = "Apple Test">
         <classes>
-            <!--<class name="TestSignIn.TestAmazonSignIn"/>-->
-            <!--<class name="AppleSearch.TestSearchBar"/>-->
-            <!--<class name="AppleSearch.TestSearchWithExcel"/>-->
             <class name="AppleHomePage.TestAppleHomePage"/>
-            <!--<class name="AppleSearch.TestSearchWithDataProvider"/>-->
-            <!--<class name="AppleSearch.TestSearchWithDB"/>-->
+            <class name="TestSignIn.TestAmazonSignIn"/>
+            <class name="AppleSearch.TestSearchBar"/>
+            <class name="AppleSearch.TestSearchWithExcel"/>
+            <class name="AppleSearch.TestSearchWithDataProvider"/>
+            <class name="AppleSearch.TestSearchWithDB"/>
         </classes>
     </test>
 </suite>

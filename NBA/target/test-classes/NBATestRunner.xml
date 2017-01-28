@@ -4,14 +4,16 @@
 
 <suite name="Nba ">
 
-    <parameter name="os" value="Win"/>
+    <parameter name="os" value="Mac"/>
     <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="50"/>
     <parameter name="url" value="http://www.nba.com/"/>
 
     <test name = "NBA Search">
         <classes>
-            <class name="SearchTeam.SearchNbaTeams"/>
+            <!--<class name="SearchTeam.SearchNbaTeams"/>-->
+            <!--<class name="Home.TestNbaHomePage"/>-->
+            <class name="SignInTest.SignInNBA"/>
         </classes>
     </test>
 </suite>

@@ -1,6 +1,6 @@
 package AppleHomePage;
 
-import PageFactory.AppleHomePage;
+import PageFactory.HomePage.AppleHomePage;
 import methods.CommonMethods;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

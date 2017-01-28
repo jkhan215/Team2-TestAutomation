@@ -1,4 +1,4 @@
-package PageFactory;
+package PageFactory.SearchBar;
 
 import Base.CommonAPI;
 import org.openqa.selenium.Keys;

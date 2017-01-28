@@ -1,7 +1,7 @@
 package methods;
 
 import Base.CommonAPI;
-import PageFactory.AppleSignIn;
+import PageFactory.SignIn.AppleSignIn;
 import org.openqa.selenium.support.PageFactory;
 import utility.ConnectDatabaseSQL;
 
