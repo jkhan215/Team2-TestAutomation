@@ -35,15 +35,12 @@ public class CommonAPI {
             String accessKey, @Optional("Windows 10") String os, @Optional("") String browserName, @Optional("")
                               String browserVersion, @Optional("") String url)throws IOException {
 
+        //run in local
         if(useCloudEnv==true){
             //run in cloud
             getCloudDriver(userName,accessKey,os,browserName,browserVersion);
 
-        }else{
-            //run in local
-            getLocalDriver(os,browserName);
-
-        }
+        }else getLocalDriver(os, browserName);
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(url);
@@ -56,7 +53,7 @@ public class CommonAPI {
             if(OS.equalsIgnoreCase("Mac")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/driver/chromedriver");
             }else if(OS.equalsIgnoreCase("Win")){
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Jubar\\IdeaProjects\\Team2\\Generic\\src\\driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Russel\\IdeaProjects\\Team2-TestAutomation\\Generic\\src\\driver\\chromedriver.exe");
             }
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){

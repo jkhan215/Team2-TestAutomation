@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Yahoo Test ">
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="Russel1"/>
+    <parameter name="accessKey" value="7bda3eb8-8c49-4231-90a4-7e793db858c4"/>
+    <parameter name="os" value="Win"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="50"/>
+    <parameter name="url" value="https://www.yahoo.com/"/>
+
+
+    <test name = "Yahoo on Chrome">
+
+                <classes>
+                    <!--<class name="HomePage.TestHomePage"/>-->
+                    <!--<class name="YahooSportsPage.TestYahooSports"/>-->
+                    <!--<class name="YahooStylePage.TestYahooStyle"/>-->
+                    <!--<class name="SearchYahoo.TestYahooSearch"/>-->
+                    <class name="YahooTvPage.TestYahooTv"/>
+
+
+
+                </classes>
+
+
+    </test>
+</suite>

@@ -12,11 +12,18 @@
         <module>Generic</module>
         <module>Apple</module>
         <module>NBA</module>
-        <module>Vanguard</module>
+        <module>Yahoo</module>
         <module>ObamaCare</module>
         <module>Twitch</module>
         <module>Reuters</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.Team2</groupId>
+            <artifactId>Generic</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
 
